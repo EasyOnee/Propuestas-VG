@@ -1,0 +1,60 @@
+<app-navbar></app-navbar>
+
+<div class="transition-none">
+    <section class="title-hero-bg" style="background-image: url(assets/images/title-bg/title-bg-1.jpg);">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-title text-center white-color">
+              <h1 class="raleway-font font-300">Our Showcase</h1>
+              <div class="breadcrumb mt-20">
+                  <!-- Breadcrumb Start -->
+                    <ul>
+                        <li><a routerLink="/home-one">Home</a></li>
+                        <li>Our Showcase</li>
+                    </ul>
+                  <!-- Breadcrumb End -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+</div>
+
+<section class="grey-bg">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-8 centerize-col text-center">
+              <div class="section-title">
+                  <h2 class="raleway-font default-color">Show Your Project Gallery</h2>
+                  <h1 class="raleway-font">Our Awesome Portfolio</h1>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper.
+                  Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum.
+                  Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+          </div>
+      </div>
+  </div>
+
+  <div class="container-fluid">
+      <div class="row mt-50">
+          <div *ngFor="let portfolio of portfolios" class="col-md-3 col-sm-6 portfolio with-spacing">
+              <div class="portfolio-item border-white-15">
+                  <a href="javascript:void(0)">
+                      <img src="assets/images/portfolio/grid/{{portfolio.img}}" alt="">
+                      <div class="portfolio-info gradient-bg">
+                          <div class="centrize">
+                              <div class="v-center white-color">
+                                  <h3>{{portfolio.title}}</h3>
+                                  <p>{{portfolio.subTitle}}</p>
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>

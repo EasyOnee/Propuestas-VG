@@ -1,0 +1,467 @@
+<app-navbar></app-navbar>
+
+<section class="hb-gradient-bg fixed-bg view-height-100vh lg-section" id="home">
+    <div class="hero-text-wrap xxl-screen transparent-bg">
+      <div class="hero-text">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 d-flex justify-content-center hero-banner-text-1">
+              <div class="all-padding-50 text-center white-color">
+                  <h2 class="font-100 raleway-font">Creative</h2>
+                  <h1>Becki Agency</h1>
+                  <h2 class="font-100 raleway-font">One Page Template</h2>
+                  <p class="mt-30">
+                    <a class="btn btn-lg btn-light btn-circle">Get Started</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hb-shapes">
+        <div class="shape-1" ngx-parallax [speed]="-60">
+            <img src="assets/images/shape-1.png" alt="shape-1"/>
+        </div>
+        <div class="shape-2" ngx-parallax [speed]="-50">
+            <img src="assets/images/shape-2.png" alt="shape-2"/>
+        </div>
+        <div class="shape-3" ngx-parallax [speed]="-40">
+            <img src="assets/images/shape-3.png" alt="shape-3"/>
+        </div>
+        <div class="shape-4" ngx-parallax [speed]="-30">
+            <img src="assets/images/shape-4.png" alt="shape-4"/>
+        </div>
+        <div class="shape-5" ngx-parallax [speed]="-20">
+            <img src="assets/images/shape-5.png" alt="shape-5"/>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="white-bg xs-pb-100" id="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 text-left mt-50 xs-mt-0">
+          <div class="section-title mb-50">
+            <h2 class="raleway-font red-color mt-0">Becki is creative one page template</h2>
+            <h1 class="raleway-font mt-30 font-50px font-300">Our Awesome Features</h1>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper. Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum. Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+          <p>Nulla luctus, tellus sed aliquam varius, mauris ligula lobortis lacus, condimentum aliquam odio felis ullamcorper leo.</p>
+          <p class="mt-30 mb-0"><a class="btn btn-lg btn-dark btn-square">Read more</a></p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <div class="responsive-screen">
+              <img src="assets/images/laptop.png" class="img-responsive" alt="Laptop" />
+            </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="hb-gradient-bg xs-pt-80 xs-pb-80">
+    <div class="container">
+        <div class="row counter-type-3 row-flex flex-center">
+            <div *ngFor="let fact of funFacts" class="col-md-3 col-sm-5 xs-mb-40 sm-mb-40 xs-ml-40 sm-ml-40">
+                <div class="counter-wrap">
+                    <div class="float-start">
+                        <i [ngClass]="fact.icon"></i>
+                    </div>
+                    <div class="float-start pl-20">
+                        <h2><span class="counter font-600 white-color">{{fact.displayedNumber | number:'1.0-0'}}</span></h2>
+                        <div class="line white-bg"></div>
+                        <span class="white-color text-uppercase">{{fact.desc}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="grey-bg" id="team">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 centerize-col text-center">
+                <div class="section-title">
+                    <h2 class="raleway-font red-color">Meet Ninjas</h2>
+                    <h1 class="raleway-font">Our Creative Team</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper.
+                    Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum.
+                    Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+            </div>
+        </div>
+        <div class="row mt-50">
+            <div class="col-md-4 col-sm-4 col-xs-12 xs-mb-30" *ngFor="let slide of slideStoreTwo">
+                <div class="team-member">
+                    <div class="team-thumb">
+                        <div class="thumb-overlay"></div>
+                        <img src="assets/images/team/{{slide.image}}" alt="">
+                        <div class="member-info text-center hb-gradient-bg">
+                            <h3>{{slide.subtitle}}</h3>
+                            <span class="title">{{slide.title}}</span>
+                            <ul class="social-link list-inline">
+                                <li *ngFor="let social of socialLinks">
+                                    <a href="#" [ngClass]="social.iconOuter"><i [ngClass]="social.iconInner"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="white-bg lg-section xs-pb-100 xs-pt-100" id="services">
+    <div class="col-md-6 col-sm-6 bg-flex bg-flex-right">
+        <div class="bg-flex-holder bg-flex-cover" style="background-image: url(assets/images/bg-right-img.jpg);"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-5 col-sm-6">
+            <div class="section-title mb-50">
+                <h2 class="raleway-font red-color mt-0 font-20px">What We Do</h2>
+                <h1 class="raleway-font mt-0 font-50px font-300">We Are Digital</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper. Mauris
+                at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum. Phasellus tempus
+                tellus vitae ullamcorper hendrerit.</p>
+            <p class="mt-30 mb-0"><a class="btn btn-lg btn-dark btn-square">Read more</a></p>
+        </div>
+    </div>
+</section>
+
+<section class="white-bg lg-section xs-pt-100 xs-pb-100">
+    <div class="col-md-6 col-sm-6 bg-flex bg-flex-left">
+        <div class="bg-flex-holder bg-flex-cover" style="background-image: url(assets/images/bg-left-img.jpg);"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-5 col-sm-6 offset-md-7 offset-md-6">
+            <div class="section-title mb-50">
+                <h2 class="raleway-font red-color mt-0 font-20px">About Us</h2>
+                <h1 class="raleway-font mt-0 font-50px font-300">We Are Partners</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper. Mauris
+                at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum. Phasellus tempus
+                tellus vitae ullamcorper hendrerit.</p>
+            <p class="mt-30 mb-0"><a class="btn btn-lg btn-dark-outline btn-square xs-pb-0">Read more</a></p>
+        </div>
+    </div>
+</section>
+
+<section class="gray-bg pb-100" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 centerize-col text-center">
+          <div class="section-title">
+            <h2 class="raleway-font red-color">We Are Becki</h2>
+            <h1 class="raleway-font">App Features</h1>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper. Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum. Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+        </div>
+      </div>
+      <div class="row mt-50">
+        <div class="col-md-4 d-flex align-items-center">
+            <div class="d-block">
+                <div *ngFor="let service of leftServices" class="text-end mt-50 sm-text-center xs-text-center">
+                    <h5 class="mt-0 font-600">{{service.title}}</h5>
+                    <p class="font-300">{{service.desc}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 xs-mt-80 sm-mt-80">
+   	    	<img class="img-responsive" src="assets/images/iphone-4.png" alt=""/>
+   	    </div>
+        <div class="col-md-4 d-flex align-items-center">
+        	<div class="d-block">
+                <div *ngFor="let service of rightServices" class="text-start mt-50 sm-text-center xs-text-center">
+                    <h5 class="mt-0 font-600">{{service.title}}</h5>
+                    <p class="font-300">{{service.desc}}</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+  <section class="hb-gradient-bg xs-pb-60">
+    <div class="col-md-6 col-sm-6 bg-flex bg-flex-left">
+        <div class="bg-flex-holder bg-flex-cover" style="background-image: url(assets/images/bg-left-img-2.jpg);">
+            <div class="video-box_overlay">
+                <div class="center-layout">
+                    <div class="v-align-middle"> 
+                        <a (click)="openPopup()">
+                            <div class="play-button"><i class="tr-icon ion-android-arrow-dropright"></i></div>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="col-md-6 col-sm-6 offset-md-6 offset-md-6">
+            <div class="col-inner spacer white-color text-center">
+                <h2 class="raleway-font mt-0 font-20px xs-font-17px">Our Amazing Story</h2>
+                <h1 class="raleway-font mt-0 font-50px font-300 xs-font-27px">Watch Our Video</h1>
+                <p>Objectively innovate empowered manufactured products whereas parallel platforms.<br>
+                    Holisticly predominate extensible testing procedures for reliable supply chains. </p>
+                <p><a href="javascript:void(0)" class="btn btn-md btn-square btn-light-outline mt-30">Meet The Team</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Video Popup -->
+<div class="video-popup" *ngIf="isOpen">
+    <div class="popup-inner">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sU3FkzUKHXU?si=vhtmR7XG-9HXU6Ij" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <button (click)="closePopup()" type="button" class="close-btn">
+            <i class='icofont icofont-close'></i>
+        </button>
+    </div>
+</div>
+
+<section class="grey-bg" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 centerize-col text-center">
+                <div class="section-title">
+                    <h2 class="raleway-font red-color">Show Your Project Gallery</h2>
+                    <h1 class="raleway-font">Our Awesome Portfolio</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper.
+                    Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum.
+                    Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+            </div>
+        </div>
+        <div class="row mt-50">
+            <div *ngFor="let portfolio of portfolios" class="col-md-4 col-sm-6 portfolio with-spacing">
+                <div class="portfolio-item border-white-15">
+                    <a href="javascript:void(0)">
+                        <img src="assets/images/portfolio/grid/{{portfolio.img}}" alt="">
+                        <div class="portfolio-info hb-gradient-bg">
+                            <div class="centrize">
+                                <div class="v-center white-color">
+                                    <h3>{{portfolio.title}}</h3>
+                                    <p>{{portfolio.subTitle}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="parallax-bg fixed-bg" style="background-image: url('assets/images/background/parallax-bg-2.jpg')">
+    <div class="overlay-bg"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center parallax-content height-400px">
+                <div class="center-layout">
+                    <div class="v-align-middle">
+                        <h1 class="font-400 white-color raleway-font xs-font-40px">We Make Themes That Solve Problems.
+                            Sometimes We Tell Stories.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="grey-bg" id="pricings">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 centerize-col text-center">
+                <div class="section-title mb-50">
+                    <h2 class="raleway-font red-color">Select Your Plan</h2>
+                    <h1 class="raleway-font">Our Pricing Table</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper.
+                    Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum.
+                    Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+            </div>
+        </div>
+        <div class="row mt-50">
+            <div *ngFor="let price of pricing; let i = index" class="col-md-4 pricing-table col-sm-4 xs-mb-30 hover-effect">
+                <div class="pricing-box border-radius-25 {{ i === 1 ? 'pricing-box-default' : 'pricing-box-gradient-ten' }} {{ i % 2===0 ? 'text-center white-color' : 'text-center' }}">
+                    <h3 class="mb-0 raleway-font">{{price.title}}</h3>
+                    <h4>{{price.subTitle}}</h4>
+                    <h2 class="font-60px sm-font-40px"><sup>{{price.currency}}</sup><span>{{price.amount}}</span></h2>
+                    <ul class="list-style-02">
+                        <li *ngFor="let feature of price.features">{{ feature }}</li>
+                    </ul>
+                    <div class="pricing-box-bottom"> <a [ngClass]="price.btnClass">{{price.btnText}}</a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="fixed-bg" style="background-image:url(assets/images/background/parallax-bg.jpg);">
+    <div class="parallax-overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <owl-carousel-o [options]="customOptions" class="testimonial-style-2 owl-btn-center-lr">
+            <ng-template carouselSlide *ngFor="let slide of slideStore">
+              <div class="testimonial-item">
+                <div class="testimonial-content white-color">
+                  <p class="mt-20 line-height-26 font-20px">
+                    <i class="icofont icofont-quote-left font-50px white-color mt-20"></i> {{slide.description}}
+                  </p>
+                  <h5 class="font-700 mb-0 white-color">{{slide.title}}</h5>
+                </div>
+              </div>
+            </ng-template>
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="grey-bg transition-none" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 centerize-col text-center">
+          <div class="section-title mb-50">
+            <h2 class="raleway-font red-color">Read Our News</h2>
+            <h1 class="raleway-font">Latest Blog Post</h1>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper. Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum. Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+        </div>
+      </div>
+      <div class="row mt-50 blog-style-01">
+        <div *ngFor="let blog of blogs" class="col-md-4 col-sm-4 col-xs-12">
+          <div class="post">
+            <div class="post-img"> 
+              <img class="img-responsive" src="assets/images/post/{{blog.img}}" alt=""/> 
+            </div>
+            <div class="post-info all-padding-40">
+              <h3><a routerLink="/blog-grid.html">{{blog.title}}</a></h3>
+              <h6>{{blog.date}}</h6>
+              <hr>
+              <p class="mt-10"> <span> <a class="extras-wrap" href="javascript:void(0);"><i class="icofont icofont-chat"></i><span>{{blog.comment}}</span></a> <span class="extras-wrap"><i class="icofont icofont-clock-time"></i><span>{{blog.time}}</span></span> </span> </p>
+              <a class="readmore" href="javascript:void(0);"><span>Read More</span></a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="white-bg transition-none" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 centerize-col text-center">
+                <div class="section-title">
+                    <h2 class="raleway-font red-color">Just Keep In Touch</h2>
+                    <h1 class="raleway-font">Contact Us Now</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper.
+                    Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum.
+                    Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-70">
+            <div class="col-md-6 col-sm-6 col-xs-12 xs-mb-50">
+                <div class="row mt-20">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="section-title">
+                            <h2 class="raleway-font red-color">Postal Address</h2>
+                            <p class="mt-30">PO Box 16122 Toronto Eaton Centre, 220 The PATH Toronto, ON M5B 2H1, Canada
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="section-title">
+                            <h2 class="raleway-font red-color">Office Numbers</h2>
+                            <p class="mb-0 mt-30">Landline : +44 1234 567 9</p>
+                            <p class="mb-0">Mobile : +44 1234 567 9</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-20">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="section-title">
+                            <h2 class="raleway-font red-color">Our Email</h2>
+                            <p class="mb-0 mt-30">Order : order&#64;yourwebsite.com</p>
+                            <p class="mb-0">Request : request&#64;yourwebsite.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="section-title">
+                            <h2 class="raleway-font red-color">Fast Support</h2>
+                            <p class="mb-0 mt-30">Support : support&#64;yourwebsite.com</p>
+                            <p class="mb-0">Career : career&#64;yourwebsite.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-20">
+                    <div class="col-md-12 social-icons-style-06">
+                        <ul class="md-icon left-icon">
+                          <li *ngFor="let social of socialMedia">
+                            <a [ngClass]="social.iconClass" href="javascript:void(0)"><i [ngClass]="social.icon"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <form (submit)="sendEmail($event)" class="contact-form-style-01" #contactForm="ngForm">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label class="visually-hidden" for="user_name">Name</label>
+                                <input type="text" minlength="2" maxlength="15"
+                                    [class.is-invalid]="userName.invalid && userName.touched" name="user_name"
+                                    class="md-input" id="name" placeholder="Name *" [(ngModel)]="formData.user_name"
+                                    #userName="ngModel" required>
+                                <div *ngIf="userName.invalid && userName.touched" class="invalid-feedback mb-10">
+                                    Name is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="mb-3">
+                                <label class="visually-hidden" for="user_email">Email</label>
+                                <input type="email" minlength="2" maxlength="35"
+                                    [class.is-invalid]="userEmail.invalid && userEmail.touched" name="user_email"
+                                    class="md-input" id="email" placeholder="Email *" [(ngModel)]="formData.user_email"
+                                    #userEmail="ngModel" required email>
+                                <div *ngIf="userEmail.invalid && userEmail.touched" class="invalid-feedback mb-10">
+                                    A valid email is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <div class="mb-3">
+                                <label class="visually-hidden" for="message">Project Details</label>
+                                <textarea name="message" [class.is-invalid]="userMessage.invalid && userMessage.touched"
+                                    class="md-textarea" id="message" rows="7" placeholder="Project Details"
+                                    [(ngModel)]="formData.message" #userMessage="ngModel" required></textarea>
+                                <div *ngIf="userMessage.invalid && userMessage.touched" class="invalid-feedback mb-10">
+                                    Project details are required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <div class="text-left mt-20">
+                                <button type="submit" name="submit"
+                                    class="btn btn-outline btn-md btn-circle btn-animate remove-margin"
+                                    [disabled]="contactForm.invalid" value="Send">
+                                    <span>Send Message <i class="ion-android-arrow-forward"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>

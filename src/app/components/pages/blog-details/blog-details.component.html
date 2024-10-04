@@ -1,0 +1,252 @@
+<app-navbar></app-navbar>
+
+<div class="transition-none">
+    <section class="title-hero-bg" style="background-image: url(assets/images/title-bg/title-bg-2.jpg);">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-title text-center white-color">
+              <h1 class="raleway-font font-300">Blog Posts</h1>
+              <div class="breadcrumb mt-20">
+                  <!-- Breadcrumb Start -->
+                    <ul>
+                        <li><a routerLink="/home-one">Home</a></li>
+                        <li>Blog Details</li>
+                    </ul>
+                  <!-- Breadcrumb End -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+</div>
+
+<section class="white-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 col-sm-9 col-xs-12 xs-mb-50">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 mb-50">
+              <div class="post">
+                <owl-carousel-o [options]="customOptions" class="blog-grid-slider owl-btn-center-lr slides">
+                  <ng-template carouselSlide *ngFor="let slide of slideStore">
+                    <div class="item">
+                      <img class="img-responsive" src="assets/images/post/{{slide.image}}" alt=""/>
+                    </div>
+                  </ng-template>
+                </owl-carousel-o>
+                <div class="post-info all-padding-40 bordered">
+                    <h3 class="font-20px text-uppercase"><a routerLink="/blog">8 Colorful Toys Designed to Spark the Imagination</a></h3>
+                    <h6>Post on April 19, 2014</h6>
+                    <hr>
+                    <p class="font-16px">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p class="mt-10"> <span> <a class="extras-wrap" routerLink="/blog"><i class="icofont icofont-chat"></i><span>5 Comments</span></a> <span class="extras-wrap"><i class="icofont icofont-clock-time"></i><span>8 Minutes</span></span> </span> </p>
+                    <a class="readmore" routerLink="/blog"><span>Read More</span></a>
+                </div>
+              </div>
+            </div>
+            <!--== Post End ==-->
+
+            <div class="col-md-12 col-sm-12 col-xs-12 mb-50">
+              <div class="blog-standard">
+                <p class="font-300">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tempor lacus et tellus consectetur, vel pretium ante elementum. Aliquam elementum dignissim tellus a venenatis. Vestibulum vel sem pulvinar, scelerisque orci non, interdum magna. Sed vestibulum elit sed placerat semper. Quisque consectetur sollicitudin purus et tempus. Sed sit amet dapibus magna. Curabitur non odio magna. Fusce viverra elit eget orci ultricies dapibus.</p>
+                <blockquote>
+                  <p>Donec dui ipsum, pulvinar sit amet mattis quis, dapibus eu libero. Curabitur lobortis, diam non semper placerat, ipsum felis pulvinar magna, quis dapibus enim velit vel lorem.</p>
+                </blockquote>
+              </div>
+              <div class="post-tags"> <a routerLink="/blog">Design</a> <a routerLink="/blog">Branding</a> <a routerLink="/blog">Stationery</a> <a routerLink="/blog">Development</a> <a routerLink="/blog">Concept</a> </div>
+              <h2 class="comment-reply-title mt-30">15 Comments</h2>
+              <ul class="comment-box">
+              <li class="post-comment">
+                <div class="comment-content"> <a routerLink="/blog" class="avatar"><img src="assets/images/team/avatar-1.jpg" alt="#"></a>
+                  <div class="post-body">
+                    <div class="comment-header"> <span class="author"><a routerLink="/blog">Karl Casey</a></span> <span class="time-ago"><a routerLink="/blog">25 mins ago</a></span> </div>
+                    <div class="post-message">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam justo, ullamcorper tincidunt pellentesque in, condimentum ut enim.</p>
+                    </div>
+                    <div class="comment-footer"> <span class="reply"><a routerLink="/blog"><i class="ion-reply"></i> Reply</a></span> </div>
+                  </div>
+                </div>
+                <ul class="reply-comment">
+                  <li class="post-comment">
+                    <div class="comment-content"> <a routerLink="/blog" class="avatar"><img src="assets/images/team/avatar-2.jpg" alt="#"></a>
+                      <div class="post-body">
+                        <div class="comment-header"> <span class="author"><a routerLink="/blog">Lynda Stone</a></span> <span class="time-ago"><a routerLink="/blog">18 days ago</a></span> </div>
+                        <div class="post-message">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="comment-footer"> <span class="reply"><a routerLink="/blog"><i class="ion-reply"></i> Reply</a></span> </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="post-comment">
+                <div class="comment-content"> <a routerLink="/blog" class="avatar"><img src="assets/images/team/avatar-3.jpg" alt="#"></a>
+                  <div class="post-body">
+                    <div class="comment-header"> <span class="author"><a routerLink="/blog">Roland Buford</a></span> <span class="time-ago"><a routerLink="/blog">3 months ago</a></span> </div>
+                    <div class="post-message">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam justo, ullamcorper tincidunt pellentesque in, condimentum ut enim.</p>
+                    </div>
+                    <div class="comment-footer"> <span class="reply"><a routerLink="/blog"><i class="ion-reply"></i> Reply</a></span> </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div id="respond" class="comment-respond">
+              <h2 id="reply-title" class="comment-reply-title">Leave a Comment</h2>
+              <form method="post" id="form-comments" class="comment-form contact-form-style-01">
+                <div class="row-form row">
+                  <div class="col-form col-md-6">
+                    <div class="form-group">
+                      <input type="text" name="name" class="md-input" id="name" required="" placeholder="Name *" data-error="Your Name is Required">
+                    </div>
+                  </div>
+                  <div class="col-form col-md-6">
+                    <div class="form-group">
+                      <input type="email" name="email" class="md-input" id="email" placeholder="Email*" required="" data-error="Please Enter Valid Email">
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <textarea name="message" class="md-textarea" id="message" rows="7" placeholder="Your Comments" required="" data-error="Please, Leave us a message"></textarea>
+                </div>
+
+                <p class="form-submit">
+                  <button class="btn btn-color btn-md btn-default remove-margin">Post Comments</button>
+                  <input type="hidden" name="comment_post_ID">
+                  <input type="hidden" name="comment_parent" id="comment_parent" value="0">
+                </p>
+              </form>
+            </div>
+
+            <h2 class="recent-post-title">Recent Posts</h2>
+            <div class="row blog-style-01">
+                <div *ngFor="let blog of blogs" class="col-md-4 col-sm-4 col-xs-12 mb-30">
+                  <div class="post">
+                    <div class="post-img"> 
+                      <img class="img-responsive" src="assets/images/post/{{blog.img}}" alt=""/> 
+                    </div>
+                    <div class="post-info all-padding-20">
+                      <h3><a routerLink="/blog-grid.html">{{blog.title}}</a></h3>
+                      <h6>{{blog.date}}</h6>
+                      <hr>
+                      <p class="mt-10"> <span> <a class="extras-wrap" href="javascript:void(0);"><i class="icofont icofont-chat"></i><span>{{blog.comment}}</span></a> <span class="extras-wrap"><i class="icofont icofont-clock-time"></i><span>{{blog.time}}</span></span> </span> </p>
+                      <a class="readmore" href="javascript:void(0);"><span>Read More</span></a> </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+
+
+          </div>
+          <div class="row mt-100">
+              <div class="col-md-12">
+                  <div class="text-center">
+                    <div class="pagination text-uppercase dark-color justify-content-center">
+                          <ul>
+                              <li><a routerLink="/blog"><i class="icofont icofont-long-arrow-left mr-5 xs-display-none"></i> Prev</a></li>
+                              <li class="active"><a routerLink="/blog">1</a></li>
+                              <li><a routerLink="/blog">2</a></li>
+                              <li><a routerLink="/blog">3</a></li>
+                              <li><a routerLink="/blog">Next <i class="icofont icofont-long-arrow-right ml-5 xs-display-none"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-3 col-xs-12">
+          <div class="widget sidebar_widget">
+            <h5 class="aside-title text-uppercase">Newsletter</h5>
+            <form class="search-form" method="get">
+              <input type="text" name="name" class="md-input" id="search" required="" placeholder="Type what it's your mind...">
+              <button type="submit" class="icofont icofont-search-alt-2 search-submit"></button>
+            </form>
+          </div>
+          <div class="mb-50">
+            <h5 class="aside-title text-uppercase">About Me</h5>
+            <a href="about-me.html">
+              <img src="assets/images/about-me.jpg" alt="about-me" />
+            </a>
+            <p class="font-300 mt-30">Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed dui lorem adipiscing in adipiscing et.</p>
+            <a class="btn btn-sm btn-dark-outline btn-square mt-10">About Author</a>
+          </div>
+          <div class="sidebar_widget widget_archive mb-50">
+            <h5 class="aside-title text-uppercase">Archive</h5>
+            <ul>
+              <li> <a routerLink="/blog">January 2018</a> <span>14</span></li>
+              <li> <a routerLink="/blog">May 2017</a> <span>8</span></li>
+              <li> <a routerLink="/blog">June 2017</a> <span>63</span></li>
+              <li> <a routerLink="/blog">Febuary 2012</a> <span>45</span></li>
+              <li> <a routerLink="/blog">April 2016</a> <span>88</span></li>
+            </ul>
+          </div>
+          <div class="social-icons-style-06 mb-50">
+            <h5 class="aside-title text-uppercase">Follow Us</h5>
+            <ul class="xs-icon">
+              <li><a class="icon facebook" routerLink="/blog"><i class="icofont icofont-social-facebook"></i></a></li>
+              <li><a class="icon twitter" routerLink="/blog"><i class="icofont icofont-social-twitter"></i></a></li>
+              <li><a class="icon tumblr" routerLink="/blog"><i class="icofont icofont-social-tumblr"></i></a></li>
+              <li><a class="icon flicker" routerLink="/blog"><i class="icofont icofont-social-flikr"></i></a></li>
+              <li><a class="icon instagram" routerLink="/blog"><i class="icofont icofont-social-instagram"></i></a></li>
+            </ul>
+          </div>
+
+          <div class="sidebar_widget widget_categories mb-50">
+            <h5 class="aside-title text-uppercase">Categories</h5>
+            <ul>
+              <li> <a routerLink="/blog">Business</a></li>
+              <li> <a routerLink="/blog">Health</a> </li>
+              <li> <a routerLink="/blog">Motion Graphic</a> </li>
+              <li> <a routerLink="/blog">Conecpt Design</a> </li>
+              <li> <a routerLink="/blog">Lifestyle</a> </li>
+            </ul>
+          </div>
+          <div class="sidebar_widget widget_tag_cloud mb-50">
+            <h5 class="aside-title text-uppercase">Tags</h5>
+            <div class="post-tags"> <a routerLink="/blog">Branding</a> <a routerLink="/blog">Marketing</a> <a routerLink="/blog">Photography</a> <a routerLink="/blog">Illustration</a> <a routerLink="/blog">Development</a> <a routerLink="/blog">Multipurpose</a> <a routerLink="/blog">Creativity</a> <a routerLink="/blog">Apps</a>  <a routerLink="/blog">Fashion</a> <a routerLink="/blog">Concept</a> <a routerLink="/blog">Design</a></div>
+          </div>
+
+          <div class="sidebar_widget widget_recent_post mb-50">
+            <h5 class="aside-title text-uppercase">Recent Posts</h5>
+            <div class="post-item">
+              <div class="post-thumb">
+                <a routerLink="/blog"><img width="100" height="90" src="assets/images/post/post-img-01.jpg" class="img-responsive" alt="post-01"/></a>
+              </div>
+              <div class="post-body">
+                <span class="font-14px"><a routerLink="/blog">Web Design</a></span>
+                <div class="post-time">1/01/2018 </div>
+                <a routerLink="/blog" class="subtitle">Travel Adventure</a>
+              </div>
+            </div>
+            <div class="post-item">
+              <div class="post-thumb">
+                <a routerLink="/blog"><img width="100" height="90" src="assets/images/post/post-img-02.jpg" class="img-responsive" alt="post-02"/></a>
+              </div>
+              <div class="post-body">
+                <span class="font-14px"><a routerLink="/blog">Small Business</a></span>
+                <div class="post-time">5/03/2018 </div>
+                <a routerLink="/blog" class="subtitle">Photography</a>
+              </div>
+            </div>
+            <div class="post-item">
+              <div class="post-thumb">
+                <a routerLink="/blog"><img width="100" height="90" src="assets/images/post/post-img-03.jpg" class="img-responsive" alt="post-03" /></a>
+              </div>
+              <div class="post-body">
+                <span class="font-14px"><a routerLink="/blog">SEO Marketing</a></span>
+                <div class="post-time">4/05/2018 </div>
+                <a routerLink="/blog" class="subtitle">Web Development</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+</section>

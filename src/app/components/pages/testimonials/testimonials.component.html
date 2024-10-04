@@ -1,0 +1,114 @@
+<app-navbar></app-navbar>
+
+<div class="transition-none">
+    <section class="title-hero-bg" style="background-image: url(assets/images/title-bg/title-bg-5.jpg);">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-title text-center white-color">
+              <h1 class="raleway-font font-300">Testimonials</h1>
+              <div class="breadcrumb mt-20">
+                  <!-- Breadcrumb Start -->
+                    <ul>
+                        <li><a routerLink="/home-one">Home</a></li>
+                        <li>Testimonials</li>
+                    </ul>
+                  <!-- Breadcrumb End -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+</div>
+
+<section class="white-bg">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-8 centerize-col text-center">
+              <div class="section-title mb-50">
+                  <h2 class="raleway-font default-color">What Our Client Says</h2>
+                  <h1 class="raleway-font">Our Testimonials</h1>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper.
+                  Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum.
+                  Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+              <owl-carousel-o [options]="customOptions" class="testimonial owl-btn-center-lr">
+                  <ng-template carouselSlide *ngFor="let slide of slideStore">
+                      <div class="testimonial-item">
+                          <div class="testimonial-content border-radius-25">
+                              <img class="img-responsive rounded-circle text-center" src="{{slide.image}}" alt="" />
+                              <h4 class="font-600 mb-0 raleway-font">{{slide.title}}</h4>
+                              <span class="default-color font-14px">{{slide.subTitle}}</span>
+                              <div class="clearfix mb-20"></div>
+                              <i class="icofont icofont-quote-left font-50px default-color mt-20"></i>
+                              <p class="mt-20 line-height-26 font-14px">{{slide.description}}</p>
+                          </div>
+                      </div>
+                  </ng-template>
+              </owl-carousel-o>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="fixed-bg" style="background-image:url(assets/images/background/parallax-bg.jpg);">
+  <div class="parallax-overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <owl-carousel-o [options]="customOptionsTwo" class="testimonial-style-2 owl-btn-center-lr">
+          <ng-template carouselSlide *ngFor="let slide of slideStoreTwo">
+            <div class="testimonial-item">
+              <div class="testimonial-content white-color">
+                <p class="mt-20 line-height-26 font-20px">
+                  <i class="icofont icofont-quote-left font-50px white-color mt-20"></i> {{slide.description}}
+                </p>
+                <h5 class="font-700 mb-0 white-color">{{slide.title}}</h5>
+              </div>
+            </div>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="white-bg">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-8 centerize-col text-center">
+              <div class="section-title mb-50">
+                  <h2 class="raleway-font red-color">What Our Client Says</h2>
+                  <h1 class="raleway-font">Our Testimonials</h1>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper.
+                  Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum.
+                  Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-12">
+              <owl-carousel-o [options]="customOptionsThree" class="testimonial gradient-bullet-three owl-btn-center-lr">
+                  <ng-template carouselSlide *ngFor="let slide of slideStoreThree">
+                      <div class="testimonial-item">
+                          <div class="testimonial-content border-radius-25">
+                              <i class="icofont icofont-quote-left font-50px red-color mt-20"></i>
+                              <p class="mt-20 line-height-26 font-14px">{{slide.description}}</p>
+                              <img class="img-responsive rounded-circle text-center" src="{{slide.image}}" alt="" />
+                              <div class="clearfix mb-20"></div>
+                              <h4 class="font-600 mb-0 raleway-font">{{slide.title}}</h4>
+                              <span class="red-color font-14px">{{slide.subTitle}}</span>
+                          </div>
+                      </div>
+                  </ng-template>
+              </owl-carousel-o>
+          </div>
+      </div>
+  </div>
+</section>

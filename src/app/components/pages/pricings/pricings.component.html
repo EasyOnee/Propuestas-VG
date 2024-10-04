@@ -1,0 +1,110 @@
+<app-navbar></app-navbar>
+
+<div class="transition-none">
+    <section class="title-hero-bg" style="background-image: url(assets/images/title-bg/title-bg-4.jpg);">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="page-title text-center white-color">
+              <h1 class="raleway-font font-300">Pricings</h1>
+              <div class="breadcrumb mt-20">
+                  <!-- Breadcrumb Start -->
+                    <ul>
+                        <li><a routerLink="/home-one">Home</a></li>
+                        <li>Pricings</li>
+                    </ul>
+                  <!-- Breadcrumb End -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>
+
+<section class="grey-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 centerize-col text-center">
+                <div class="section-title mb-50">
+                    <h2 class="raleway-font default-color">Select Your Plan</h2>
+                    <h1 class="raleway-font">Our Pricing Table</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper.
+                    Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum.
+                    Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+            </div>
+        </div>
+        <div class="row mt-50">
+            <div *ngFor="let price of pricing; let i = index" class="col-md-4 pricing-table col-sm-4 xs-mb-30 hover-effect">
+                <div class="pricing-box border-radius-25 {{ i === 1 ? 'pricing-box-gradient-two' : 'pricing-box-gradient' }} text-center white-color">
+                    <h3 class="mb-0 raleway-font">{{price.title}}</h3>
+                    <h4>{{price.subTitle}}</h4>
+                    <h2 class="font-60px sm-font-40px"><sup>{{price.currency}}</sup><span>{{price.amount}}</span></h2>
+                    <ul class="list-style-02">
+                        <li *ngFor="let feature of price.features">{{ feature }}</li>
+                    </ul>
+                    <div class="pricing-box-bottom"> <a [ngClass]="price.btnClass">{{price.btnText}}</a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="dark-grey-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 centerize-col text-center">
+                <div class="section-title mb-50">
+                    <h2 class="raleway-font">Select Your Plan</h2>
+                    <h1 class="raleway-font gradient-color">Our Pricing Table</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper.
+                    Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum.
+                    Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+            </div>
+        </div>
+        <div class="row mt-50">
+            <div *ngFor="let price of pricingTwo; let i = index" class="col-md-6 pricing-table col-sm-6 xs-mb-30 hover-effect">
+                <div
+                    class="pricing-box border-radius-25 {{ i === 1 ? 'pricing-box-green' : 'pricing-box-purple' }} text-center">
+                    <h3 class="mb-0 raleway-font">{{price.title}}</h3>
+                    <h4>{{price.subTitle}}</h4>
+                    <h2 class="font-60px sm-font-40px"><sup>{{price.currency}}</sup><span>{{price.amount}}</span></h2>
+                    <ul class="list-style-02">
+                        <li *ngFor="let feature of price.features">{{ feature }}</li>
+                    </ul>
+                    <div class="pricing-box-bottom"> <a [ngClass]="price.btnClass">{{price.btnText}}</a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="parallax-bg fixed-bg" style="background: url('assets/images/background/parallax-bg-2.jpg');">
+    <div class="parallax-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 centerize-col text-center">
+              <div class="section-title mb-50">
+                <h2 class="raleway-font white-color">Select Your Plan</h2>
+                <h1 class="raleway-font gradient-color">Our Pricing Table</h1>
+              </div>
+              <p class="white-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper. Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum. Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+            </div>
+        </div>
+        <div class="row mt-50">
+            <div *ngFor="let price of pricing; let i = index" class="col-md-4 pricing-table col-sm-4 xs-mb-30 hover-effect">
+                <div class="pricing-box border-radius-25 {{ i === 1 ? 'pricing-box-default' : 'pricing-box-gradient-five white-color' }} text-center">
+                    <h3 class="mb-0 raleway-font">{{price.title}}</h3>
+                    <h4>{{price.subTitle}}</h4>
+                    <h2 class="font-60px sm-font-40px"><sup>{{price.currency}}</sup><span>{{price.amount}}</span></h2>
+                    <ul class="list-style-02">
+                        <li *ngFor="let feature of price.features">{{ feature }}</li>
+                    </ul>
+                    <div class="pricing-box-bottom"> <a [ngClass]="price.btnClass">{{price.btnText}}</a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

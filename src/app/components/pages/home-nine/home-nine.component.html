@@ -1,0 +1,517 @@
+<app-navbar></app-navbar>
+
+<section class="pt-0 pb-0 home-slider" id="home">
+    <div class="slider-bg">
+        <ul class="slides">
+            <li>
+                <owl-carousel-o [options]="customOptions" class="owl-btn-center-lr">
+                    <ng-template carouselSlide *ngFor="let slide of slideStore">
+                        <div class="slide-img" style="background-image: url('{{slide.image}}')">
+                            <div class="hero-text-wrap">
+                                <div class="hero-text white-color">
+                                    <div class="container xs-text-center">
+                                        <h4 class="white-color raleway-font font-300">{{slide.introtext}}</h4>
+                                        <h1 class="white-color font-700 text-uppercase font-100px line-height-90 xs-font-40px xs-line-height-50 sm-font-60px sm-line-height-60">{{slide.title}}</h1>
+                                        <a [routerLink]="'/about'" [ngClass]="slide.btnSlide"><span>{{slide.btnText}} <i class="icofont icofont-arrow-right"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </owl-carousel-o>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="white-bg" id="features">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-23 text-left sm-mt-0 d-flex align-items-center">
+                <div class="d-block pl-30 sm-pl-0">
+                    <div class="section-title mb-50">
+                        <h2 class="raleway-font default-color mt-0">Becki is creative one page template</h2>
+                        <h1 class="raleway-font mt-30 font-50px font-300">Our Awesome <span class="type-it default-color">{{ displayedText }}</span></h1>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius
+                        semper. Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula
+                        elementum. Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+                    <p class="mt-30 mb-0"><a class="btn btn-lg btn-gradient-secondary btn-circle">Read more</a></p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="responsive-screen mt-0">
+                    <img src="assets/images/laptop.png" class="img-responsive" alt="laptop">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bordered-bg white-bg lg-section xs-pb-100 xs-pt-100">
+    <div class="col-md-6 col-sm-6 bg-flex bg-flex-right">
+        <div class="bg-flex-holder bg-flex-cover" style="background-image: url(assets/images/bg-right-img.jpg);"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-5 col-sm-6">
+            <div class="section-title mb-50">
+                <h2 class="raleway-font default-color mt-0 font-20px">What We Do</h2>
+                <h1 class="raleway-font mt-0 font-50px font-300">We Are Digital</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper. Mauris
+                at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum. Phasellus tempus
+                tellus vitae ullamcorper hendrerit.</p>
+            <p class="mt-30 mb-0"><a class="btn btn-lg btn-gradient-secondary btn-circle">Read more</a></p>
+        </div>
+    </div>
+</section>
+
+<section class="white-bg lg-section xs-pt-100 xs-pb-100">
+    <div class="col-md-6 col-sm-6 bg-flex bg-flex-left">
+        <div class="bg-flex-holder bg-flex-cover" style="background-image: url(assets/images/bg-left-img.jpg);"></div>
+    </div>
+    <div class="container">
+        <div class="col-md-5 col-sm-6 offset-md-7 offset-md-6">
+            <div class="section-title mb-50">
+                <h2 class="raleway-font default-color mt-0 font-20px">About Us</h2>
+                <h1 class="raleway-font mt-0 font-50px font-300">We Are Partners</h1>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper. Mauris
+                at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum. Phasellus tempus
+                tellus vitae ullamcorper hendrerit.</p>
+            <p class="mt-30 mb-0"><a class="btn btn-lg btn-gradient-primary btn-circle">Read more</a></p>
+        </div>
+    </div>
+</section>
+
+<section class="default-bg pt-80 pb-80">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title mb-50 white-color text-center">
+                    <h1 class="raleway-font remove-margin font-50px font-300">Our Process</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row our-process-style-02">
+            <div *ngFor="let step of steps" class="col-md-3 col-sm-6 col-xs-12 line xs-mb-30 sm-mb-30">
+                <div class="icon-wrap white-bg">
+                    <div class="icon">
+                        <i [ngClass]="step.icon"></i>
+                    </div>
+                </div>
+                <div class="text-center white-color">
+                    <h4 class="font-500">{{step.title}}</h4>
+                    <p class="mb-0">{{step.desc}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="grey-bg" id="team">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 centerize-col text-center">
+                <div class="section-title">
+                    <h2 class="raleway-font default-color">Meet Ninjas</h2>
+                    <h1 class="raleway-font">Our Creative Team</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper.
+                    Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum.
+                    Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+            </div>
+        </div>
+
+        <div class="row mt-50">
+            <div class="team-slider">
+                <div class="col-md-12">
+                    <owl-carousel-o [options]="customOptionsTwo" class="owl-btn-center-lr">
+                        <ng-template carouselSlide *ngFor="let slide of slideStoreTwo">
+                            <div class="team-member">
+                                <div class="team-thumb">
+                                    <div class="thumb-overlay"></div>
+                                    <img src="assets/images/team/{{slide.image}}" alt="">
+                                    <div [ngClass]="slide.index === 0 ? 'member-info text-center secondary-bg' : 'member-info text-center default-bg'">
+                                        <h3>{{slide.subtitle}}</h3>
+                                        <span class="title">{{slide.title}}</span>
+                                        <ul class="social-link list-inline">
+                                            <li *ngFor="let social of socialLinks">
+                                                <a href="#" [ngClass]="social.iconOuter"><i
+                                                        [ngClass]="social.iconInner"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </owl-carousel-o>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="white-bg pb-80" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 centerize-col text-center">
+                <div class="section-title">
+                    <h2 class="raleway-font default-color">What We Offer</h2>
+                    <h1 class="raleway-font">Our Services</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper.
+                    Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum.
+                    Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+            </div>
+        </div>
+
+        <div class="row mt-50">
+            <div *ngFor="let service of services" class="col-md-4 col-sm-4 col-xs-12 mb-30 feature-box text-center hover-effect">
+                <div class="default-bg-icon mb-20">
+                    <i [ngClass]="service.icon"></i>
+                </div>
+                <h5 class="mt-10">{{service.title}}</h5>
+                <p class="font-400">{{service.desc}}</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="gray-bg" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 centerize-col text-center">
+                <div class="section-title">
+                    <h2 class="raleway-font default-color">We Are Becki</h2>
+                    <h1 class="raleway-font">About Company</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper.
+                    Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum.
+                    Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+            </div>
+        </div>
+        <div class="row mt-50">
+            <div class="col-md-7 col-xs-12">
+                <img class="img-responsive border-radius-25" src="assets/images/about-heading-2.jpg" alt="about-heading-2">
+            </div>
+            <div class="col-md-5 mt-30 col-xs-12">
+                <div class="skillbar-wrap skillbar-style-01">
+                    <div *ngFor="let skill of skills" class="pl-30 sm-pl-0">
+                        <div class="skillbar">
+                            <span class="skillbar-title text-uppercase">{{ skill.name }}</span>
+                            <p class="skillbar-bar default-bg" role="progressbar" [style.width]="skill.level + '%'" [attr.aria-valuenow]="skill.level" aria-valuemin="0" aria-valuemax="100"></p>
+                            <span class="skill-bar-percent">{{ skill.level }}%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="default-bg xs-pb-60">
+    <div class="col-md-6 col-sm-6 bg-flex bg-flex-left">
+        <div class="bg-flex-holder bg-flex-cover" style="background-image: url(assets/images/bg-left-img-2.jpg);">
+            <div class="video-box_overlay">
+                <div class="center-layout">
+                    <div class="v-align-middle"> 
+                        <a (click)="openPopup()">
+                            <div class="play-button"><i class="tr-icon ion-android-arrow-dropright"></i></div>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="col-md-6 col-sm-6 offset-md-6 offset-md-6">
+            <div class="col-inner spacer white-color text-center">
+                <h2 class="raleway-font mt-0 font-20px xs-font-17px">Our Amazing Story</h2>
+                <h1 class="raleway-font mt-0 font-50px font-300 xs-font-27px">Watch Our Video</h1>
+                <p>Objectively innovate empowered manufactured products whereas parallel platforms.<br>
+                    Holisticly predominate extensible testing procedures for reliable supply chains. </p>
+                <p><a href="javascript:void(0)" class="btn btn-md btn-square btn-light-outline mt-30">Meet The Team</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Video Popup -->
+<div class="video-popup" *ngIf="isOpen">
+    <div class="popup-inner">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sU3FkzUKHXU?si=vhtmR7XG-9HXU6Ij" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <button (click)="closePopup()" type="button" class="close-btn">
+            <i class='icofont icofont-close'></i>
+        </button>
+    </div>
+</div>
+
+<section class="grey-bg" id="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 centerize-col text-center">
+                <div class="section-title">
+                    <h2 class="raleway-font default-color">Show Your Project Gallery</h2>
+                    <h1 class="raleway-font">Our Awesome Portfolio</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper.
+                    Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum.
+                    Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row mt-50">
+            <div *ngFor="let portfolio of portfolios" class="col-md-3 col-sm-6 portfolio with-spacing">
+                <div class="portfolio-item border-white-15">
+                    <a href="javascript:void(0)">
+                        <img src="assets/images/portfolio/grid/{{portfolio.img}}" alt="">
+                        <div class="portfolio-info default-bg">
+                            <div class="centrize">
+                                <div class="v-center white-color">
+                                    <h3>{{portfolio.title}}</h3>
+                                    <p>{{portfolio.subTitle}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="parallax-bg fixed-bg" style="background-image: url('assets/images/background/parallax-bg-2.jpg')">
+    <div class="overlay-bg"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center parallax-content height-400px">
+                <div class="center-layout">
+                    <div class="v-align-middle">
+                        <h1 class="font-400 white-color raleway-font xs-font-40px">We Make Themes That Solve Problems.
+                            Sometimes We Tell Stories.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="grey-bg" id="pricings">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 centerize-col text-center">
+                <div class="section-title mb-50">
+                    <h2 class="raleway-font default-color">Select Your Plan</h2>
+                    <h1 class="raleway-font">Our Pricing Table</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper.
+                    Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum.
+                    Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+            </div>
+        </div>
+        <div class="row mt-50">
+            <div *ngFor="let price of pricing; let i = index" class="col-md-4 pricing-table col-sm-4 xs-mb-30 hover-effect">
+                <div
+                    class="pricing-box border-radius-25 {{ i === 1 ? 'pricing-box-secondary' : 'pricing-box-default' }} text-center">
+                    <h3 class="mb-0 raleway-font">{{price.title}}</h3>
+                    <h4>{{price.subTitle}}</h4>
+                    <h2 class="font-60px sm-font-40px"><sup>{{price.currency}}</sup><span>{{price.amount}}</span></h2>
+                    <ul class="list-style-02">
+                        <li *ngFor="let feature of price.features">{{ feature }}</li>
+                    </ul>
+                    <div class="pricing-box-bottom"> <a [ngClass]="price.btnClass">{{price.btnText}}</a> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="white-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 centerize-col text-center">
+                <div class="section-title mb-50">
+                    <h2 class="raleway-font default-color">What Our Client Says</h2>
+                    <h1 class="raleway-font">Our Testimonials</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper.
+                    Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum.
+                    Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <owl-carousel-o [options]="customOptionsThree" class="testimonial owl-btn-center-lr">
+                    <ng-template carouselSlide *ngFor="let slide of slideStoreThree">
+                        <div class="testimonial-item">
+                            <div class="testimonial-content border-radius-25">
+                                <img class="img-responsive rounded-circle text-center" src="{{slide.image}}" alt="" />
+                                <h4 class="font-600 mb-0 raleway-font">{{slide.title}}</h4>
+                                <span class="default-color font-14px">{{slide.subTitle}}</span>
+                                <div class="clearfix mb-20"></div>
+                                <i class="icofont icofont-quote-left font-50px default-color mt-20"></i>
+                                <p class="mt-20 line-height-26 font-14px">{{slide.description}}</p>
+                            </div>
+                        </div>
+                    </ng-template>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="grey-bg pt-120 pb-120">
+    <div class="container">
+        <div class="row">
+            <div class="client-slider">
+                <owl-carousel-o [options]="customOptionsFour" class="owl-btn-center-lr">
+                    <ng-template carouselSlide *ngFor="let slide of slideStoreFour">
+                        <div class="client-logo">
+                            <img class="img-responsive" src="{{slide.image}}" alt="01" />
+                        </div>
+                    </ng-template>
+                </owl-carousel-o>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<section class="secondary-bg xs-pb-60" id="blog">
+    <div class="col-md-6 col-sm-6 bg-flex bg-flex-right">
+        <div class="bg-flex-holder bg-flex-cover" style="background-image: url(assets/images/blog-img.jpg);"></div>
+    </div>
+    <div class="container-fluid">
+        <div class="col-md-6 col-sm-6">
+            <div class="col-inner spacer white-color text-center">
+                <h2 class="raleway-font mt-0 font-20px xs-font-17px">Read Our News</h2>
+                <h1 class="raleway-font mt-0 font-50px font-300 xs-font-27px">Latest Blog Post</h1>
+                <p>Objectively innovate empowered manufactured products whereas parallel platforms.<br> Holisticly
+                    predominate extensible testing procedures for reliable supply chains. </p>
+                <p><a routerLink="/blog-details" class="btn btn-md btn-square btn-light-outline mt-30">See Blog Details</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="white-bg transition-none" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 centerize-col text-center">
+                <div class="section-title">
+                    <h2 class="raleway-font default-color">Just Keep In Touch</h2>
+                    <h1 class="raleway-font">Contact Us Now</h1>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper ex ac velit varius semper.
+                    Mauris at dolor nec ante ultricies aliquam ac vitae diam. Quisque sodales vehicula elementum.
+                    Phasellus tempus tellus vitae ullamcorper hendrerit.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-70">
+            <div class="col-md-6 col-sm-6 col-xs-12 xs-mb-50">
+                <div class="row mt-20">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="section-title">
+                            <h2 class="raleway-font default-color">Postal Address</h2>
+                            <p class="mt-30">PO Box 16122 Toronto Eaton Centre, 220 The PATH Toronto, ON M5B 2H1, Canada
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="section-title">
+                            <h2 class="raleway-font default-color">Office Numbers</h2>
+                            <p class="mb-0 mt-30">Landline : +44 1234 567 9</p>
+                            <p class="mb-0">Mobile : +44 1234 567 9</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-20">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="section-title">
+                            <h2 class="raleway-font default-color">Our Email</h2>
+                            <p class="mb-0 mt-30">Order : order&#64;yourwebsite.com</p>
+                            <p class="mb-0">Request : request&#64;yourwebsite.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="section-title">
+                            <h2 class="raleway-font default-color">Fast Support</h2>
+                            <p class="mb-0 mt-30">Support : support&#64;yourwebsite.com</p>
+                            <p class="mb-0">Career : career&#64;yourwebsite.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-20">
+                    <div class="col-md-12 social-icons-style-01">
+                        <ul class="md-icon left-icon">
+                            <li *ngFor="let social of socialMedia">
+                                <a [ngClass]="social.iconClass" href="javascript:void(0)"><i
+                                        [ngClass]="social.icon"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <form (submit)="sendEmail($event)" class="contact-form-style-01" #contactForm="ngForm">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-group">
+                                <label class="visually-hidden" for="user_name">Name</label>
+                                <input type="text" minlength="2" maxlength="15"
+                                    [class.is-invalid]="userName.invalid && userName.touched" name="user_name"
+                                    class="md-input" id="name" placeholder="Name *" [(ngModel)]="formData.user_name"
+                                    #userName="ngModel" required>
+                                <div *ngIf="userName.invalid && userName.touched" class="invalid-feedback mb-10">
+                                    Name is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="mb-3">
+                                <label class="visually-hidden" for="user_email">Email</label>
+                                <input type="email" minlength="2" maxlength="35"
+                                    [class.is-invalid]="userEmail.invalid && userEmail.touched" name="user_email"
+                                    class="md-input" id="email" placeholder="Email *" [(ngModel)]="formData.user_email"
+                                    #userEmail="ngModel" required email>
+                                <div *ngIf="userEmail.invalid && userEmail.touched" class="invalid-feedback mb-10">
+                                    A valid email is required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <div class="mb-3">
+                                <label class="visually-hidden" for="message">Project Details</label>
+                                <textarea name="message" [class.is-invalid]="userMessage.invalid && userMessage.touched"
+                                    class="md-textarea" id="message" rows="7" placeholder="Project Details"
+                                    [(ngModel)]="formData.message" #userMessage="ngModel" required></textarea>
+                                <div *ngIf="userMessage.invalid && userMessage.touched" class="invalid-feedback mb-10">
+                                    Project details are required.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                            <div class="text-left mt-20">
+                                <button type="submit" name="submit"
+                                    class="btn btn-outline btn-md btn-circle btn-animate remove-margin"
+                                    [disabled]="contactForm.invalid" value="Send">
+                                    <span>Send Message <i class="ion-android-arrow-forward"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</section>
