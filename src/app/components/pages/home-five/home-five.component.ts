@@ -12,26 +12,26 @@ export class HomeFiveComponent {
   funFacts =[
     {
       icon: "icon-hourglass white-color font-50px",
-      number: 352,
+      number: 1245,
       desc: "Happy Clients",
       displayedNumber: 0
     },
     {
       icon: "icon-lightbulb white-color font-50px",
-      number: 884,
+      number: 35,
       desc: "Year Experience",
       displayedNumber: 0
     },
     {
       icon: "icon-wine white-color font-50px",
-      number: 662,
+      number: 1024,
       desc: "Project Completed",
       displayedNumber: 0
     },
     {
       icon: "icon-hotairballoon white-color font-50px",
-      number: 444,
-      desc: "Awwwards",
+      number: 10,
+      desc: "Awards",
       displayedNumber: 0
     }
   ]
@@ -64,18 +64,18 @@ export class HomeFiveComponent {
   
   slideStoreTwo= [
     {
-      title: "Web Designer",
-      subtitle: "Tom Bills",
+      title: "Employee",
+      subtitle: "User",
       image: "team-1.jpg"
     },
     {
-      title: "CEO of Becki Agency",
-      subtitle: "Sara Adams",
+      title: "Employee",
+      subtitle: "User",
       image: "team-2.jpg"
     },
     {
-      title: "Photographer",
-      subtitle: "Enzo William",
+      title: "Employee",
+      subtitle: "User",
       image: "team-3.jpg"
     }
   ];
@@ -90,32 +90,34 @@ export class HomeFiveComponent {
 
   leftServices = [
     {
-      title: "Retina Ready",
-      desc: "Nunc pharetra ullamcorper enim eget interdum. Morbi vitae pulvinar lacus. Suspendisse pulvinar tempus hendrerit. Suspendisse quam felis.",
+      title: "High-resolution",
+      desc: "High-resolution support ensures a clear and engaging shopping experience across all devices.",
     },
     {
       title: "Awesome Design",
-      desc: "Nunc pharetra ullamcorper enim eget interdum. Morbi vitae pulvinar lacus. Suspendisse pulvinar tempus hendrerit. Suspendisse quam felis.",
+      desc: "An intuitive and modern design that makes browsing products and completing purchases effortless.",
     },
     {
       title: "Minimal Style",
-      desc: "Nunc pharetra ullamcorper enim eget interdum. Morbi vitae pulvinar lacus. Suspendisse pulvinar tempus hendrerit. Suspendisse quam felis.",
+      desc: "A clutter-free interface that helps you find exactly what you're looking for quickly.",
     }
-  ]
-
+  ];
+  
   rightServices = [
     {
       title: "Top Quality",
-      desc: "Nunc pharetra ullamcorper enim eget interdum. Morbi vitae pulvinar lacus. Suspendisse pulvinar tempus hendrerit. Suspendisse quam felis.",
+      desc: "Our platform provides top-quality listings and verified sellers to ensure reliable products.",
     },
     {
       title: "Best Performance",
-      desc: "Nunc pharetra ullamcorper enim eget interdum. Morbi vitae pulvinar lacus. Suspendisse pulvinar tempus hendrerit. Suspendisse quam felis.",
-    },{
+      desc: "Optimized to provide fast loading times and seamless navigation through thousands of products.",
+    },
+    {
       title: "Fast Support",
-      desc: "Nunc pharetra ullamcorper enim eget interdum. Morbi vitae pulvinar lacus. Suspendisse pulvinar tempus hendrerit. Suspendisse quam felis.",
+      desc: "Customer support is always ready to help with your purchases and inquiries, ensuring a smooth experience.",
     }
-  ]
+  ];
+  
 
   // Portfolio
   portfolios = [
