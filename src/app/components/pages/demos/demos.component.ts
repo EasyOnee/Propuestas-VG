@@ -11,86 +11,24 @@ export class DemosComponent {
   
   chooserTemplate = [
     {
-      img: "demo-1.jpg",
-      templateText: "Default Home",
-      templateType: "(for Everyone)",
-      btnClass: "btn btn-color btn-lg btn-square",
-      btnText: "Live Preview",
-      url: "/home-one",
-      keyFeatures: ['OWl Slider', 'Gradient Color Background', 'Masonry Portfolio Gallery', 'Contact Form']
-    },
-    {
-      img: "demo-2.jpg",
-      templateText: "Image Background",
-      templateType: "(for Corporate)",
-      btnClass: "btn btn-color btn-lg btn-square",
-      btnText: "Live Preview",
-      url: "/home-two",
-      keyFeatures: ['Single Image Background', 'Pie Charts', 'Metro Portfolio Gallery', 'Active Link Tab', 'Contact Form']
-    },
-    {
-      img: "demo-3.jpg",
+      img: "../../../../assets/images/background/bg2.png",
       templateText: "Video Background",
-      templateType: "(for Photography)",
+      templateType: "(Landing Page)",
       btnClass: "btn btn-color btn-lg btn-square",
       btnText: "Live Preview",
       url: "/home-three",
       keyFeatures: ['Video Background', 'Animated Text', 'Gradient Color Background', 'Fullwidth Portfolio Gallery', 'Contact Form']
     },
     {
-      img: "demo-4.jpg",
-      templateText: "Digital Agency",
-      templateType: "(for Agencies)",
-      btnClass: "btn btn-color btn-lg btn-square",
-      btnText: "Live Preview",
-      url: "/home-four",
-      keyFeatures: ['Owl Slider', 'Kenburn Effect', 'Solid Color Background', 'Fullwidth Portfolio Gallery', 'Contact Form']
-    },
-    {
-      img: "demo-5.jpg",
-      templateText: "Design Studio",
-      templateType: "(for Personal Creative)",
+      img: "../../../../assets/images/background/videback2.png",
+      templateText: "Design Friendly",
+      templateType: "(Creative Langing Page)",
       btnClass: "btn btn-color btn-lg btn-square",
       btnText: "Live Preview",
       url: "/home-five",
       keyFeatures: ['Parallax Scrolling', 'Dark Gradient Background', 'Square Button', 'Contact Form', 'Mobile Friendly', 'Client Testimonials']
     },
-    {
-      img: "demo-6.jpg",
-      templateText: "Startup Business",
-      templateType: "(for Everyone)",
-      btnClass: "btn btn-color btn-lg btn-square",
-      btnText: "Live Preview",
-      url: "/home-six",
-      keyFeatures: ['Owl Slider', 'Lime Gradient Background', 'Masonry Portfolio Gallery', 'Contact Form']
-    },
-    {
-      img: "demo-7.jpg",
-      templateText: "SEO Marketing",
-      templateType: "(for Marketing)",
-      btnClass: "btn btn-color btn-lg btn-square",
-      btnText: "Live Preview",
-      url: "/home-seven",
-      keyFeatures: ['Animated Text', 'Gradient Color Text', 'Masonry Portfolio Gallery', 'Contact Form']
-    },
-    {
-      img: "demo-8.jpg",
-      templateText: "Innovative Agency",
-      templateType: "(for Everyone)",
-      btnClass: "btn btn-color btn-lg btn-square",
-      btnText: "Live Preview",
-      url: "/home-eighth",
-      keyFeatures: ['Owl Slider', 'Gradient Overlay Background', 'Metro Portfolio Gallery', 'Contact Form']
-    },
-    {
-      img: "demo-9.jpg",
-      templateText: "Business Agency",
-      templateType: "(for Everyone)",
-      btnClass: "btn btn-color btn-lg btn-square",
-      btnText: "Live Preview",
-      url: "/home-nine",
-      keyFeatures: ['Owl Slider', 'Animated Text', 'Grid Portfolio', 'Contact Form']
-    },
+
   ]
 
 
